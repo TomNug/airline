@@ -45,12 +45,26 @@
     <Compile Include="airline\settings.py" />
     <Compile Include="airline\urls.py" />
     <Compile Include="airline\wsgi.py" />
+    <Compile Include="users\admin.py" />
+    <Compile Include="users\apps.py" />
+    <Compile Include="users\migrations\__init__.py" />
+    <Compile Include="users\models.py" />
+    <Compile Include="users\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users\tests.py" />
+    <Compile Include="users\views.py" />
+    <Compile Include="users\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="flights\templates\flights\flight.html" />
     <Content Include="flights\templates\flights\index.html" />
     <Content Include="flights\templates\flights\layout.html" />
     <Content Include="requirements.txt" />
+    <Content Include="users\templates\users\index.html" />
+    <Content Include="users\templates\users\layout.html" />
+    <Content Include="users\templates\users\login.html" />
+    <Content Include="users\templates\users\user.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="airline\" />
@@ -58,6 +72,10 @@
     <Folder Include="flights\migrations\" />
     <Folder Include="flights\templates\" />
     <Folder Include="flights\templates\flights\" />
+    <Folder Include="users\" />
+    <Folder Include="users\migrations\" />
+    <Folder Include="users\templates\" />
+    <Folder Include="users\templates\users\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

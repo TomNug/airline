@@ -23,5 +23,6 @@ from django.urls import include, path
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
-    path("flights/", include("flights.urls"))
+    path("flights/", include("flights.urls")),
+    path("users/", include("users.urls"))
 ]
